@@ -1,11 +1,12 @@
 <?php
 /**
- * Plugin Name:       WA RSFP directory block
- * Description:       A block specially designed for single directory pages.
+ * Plugin Name:       WA RSFP Directory blocks
+ * Description:       Bunch of blocks specially designed for single directory pages.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           1.0
  * Author:            Wilhem Arnoldy
+ * Author URI:        https://www.wilhemarnoldy.fr
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       wa-rsfp
@@ -25,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function wa_rsfp_directory_block() {
-	register_block_type( __DIR__ . '/build' );
+	register_block_type( __DIR__ . '/build/block1' );
 
 	// FIX : Force declare post_meta in addition of metabox io to make it work
 	register_post_meta(
